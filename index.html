@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <script src="./jquery.js"></script>
+    
+    <link rel="icon" href="./i.png" type="image/png">
+    <title>IT Company</title>
+</head>
+<body>
+
+<script>
+({
+    start: async function () {
+        await document.body.load('module', 'menu');
+        //
+        await document.body.load('module', 'face');
+        //
+        await document.body.load('module', 'catalog');
+        //
+        await document.body.load('module', 'info');
+        //
+        await document.body.load('module', 'bot');
+    }
+}).start();
+</script>
+
+</body>
+</html>
